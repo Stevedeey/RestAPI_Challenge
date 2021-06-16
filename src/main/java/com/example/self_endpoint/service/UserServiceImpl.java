@@ -3,6 +3,7 @@ package com.example.self_endpoint.service;
 import com.example.self_endpoint.model.Person;
 import com.example.self_endpoint.utility.GenerateID;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -23,6 +24,7 @@ public class UserServiceImpl implements UserService {
     public UserServiceImpl() {
     }
 
+    @Autowired
     public UserServiceImpl(GenerateID generateIDutils) {
         this.generateIDutils = generateIDutils;
     }

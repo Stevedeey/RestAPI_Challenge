@@ -20,13 +20,9 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/")
 public class PersonController {
-
+    @Autowired
     private UserService userService;
 
-    @Autowired
-    public PersonController(UserService userService) {
-        this.userService = userService;
-    }
 
     UserServiceImpl userServiceimp = new UserServiceImpl();
 
